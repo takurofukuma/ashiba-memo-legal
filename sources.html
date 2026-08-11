@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>部材規格の出典・免責事項 - 足場割付メモ</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+      max-width: 720px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.8;
+    }
+    h1 { color: #E65100; font-size: 22px; }
+    h2 { font-size: 16px; margin-top: 32px; border-bottom: 2px solid #f0f0f0; padding-bottom: 6px; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+    th, td { border: 1px solid #e0e0e0; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #fafafa; }
+    .note { background: #fff8f2; border-left: 3px solid #E65100; padding: 12px 16px; margin: 16px 0; }
+    code { background: #f5f5f5; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>部材規格の出典・免責事項</h1>
+  <p>足場割付メモ｜最終更新：2026年8月12日</p>
+
+  <div class="note">
+    <strong>本アプリは計算補助です。</strong>
+    登録された部材ルールにもとづく割付候補と概算数量を表示するもので、足場の安全性の判定、
+    労働安全衛生法令への適合性の判定は行いません。設置の可否・安全性・法令適合は、
+    必ず有資格者・現場責任者がご確認ください。
+  </div>
+
+  <h2>1. アプリに収録している部材規格</h2>
+  <p>アプリ内の規格プロファイルの数値は、メーカーのカタログ・製品ページ、足場資材の販売／レンタル会社が
+  公開する寸法表、および業界団体の技術基準を照合して収録しています。<strong>複数の独立した資料で
+  一致した数値のみ</strong>を採用しました。</p>
+
+  <table>
+    <tr><th>項目</th><th>Aタイプ（キャッチャー系）</th><th>Bタイプ（ビケ系）</th></tr>
+    <tr><td>コマ（緊結部）ピッチ</td><td>450mm</td><td>475mm</td></tr>
+    <tr><td>1層の高さ（標準・コマ4個）</td><td>1,800mm</td><td>1,900mm</td></tr>
+    <tr><td>支柱（建地）</td><td>3600 / 2700 / 1800 / 900 / 450mm</td><td>3800 / 1900 / 1230 / 1095 / 950 / 620 / 475 / 130mm</td></tr>
+    <tr><td>布材・手すりのスパン</td><td colspan="2">1800 / 1500 / 1200 / 900 / 600mm（メートル規格・300mmの倍数）</td></tr>
+    <tr><td>踏板（アンチ）幅</td><td>500 / 400 / 300 / 250 / 150mm</td><td>500 / 400 / 240 / 150mm</td></tr>
+  </table>
+
+  <p>主な参照先：信和「シンワキャッチャー」カタログ、平和技研（ヘイワビルダー／ビルダーアルファ）製品情報、
+  KRH システム足場 Aタイプ製品情報、ダイサン ビケ足場の部材一覧（販売・レンタル各社の公開寸法表）、
+  一般社団法人 仮設工業会「くさび緊結式足場の組立て及び使用に関する技術基準」、
+  厚生労働省リーフレット（足場からの墜落防止措置）、労働安全衛生規則。</p>
+
+  <h2>2. AタイプとBタイプの互換性について</h2>
+  <p>コマピッチが 450mm と 475mm で異なるため、<strong>AタイプとBタイプの部材に互換性はありません</strong>。
+  アプリでも規格を切り替えて計算し、混在した計算は行いません。実際の施工でも混用しないでください。</p>
+  <p>また、くさび緊結式足場の布材・手すりは主要メーカーとも<strong>メートル規格（300mmの倍数）</strong>です。
+  1,829mm 等のインチ系列は枠組足場の区分であり、本アプリでは扱っていません。</p>
+
+  <h2>3. 数値の限界（正直に書いておくこと）</h2>
+  <ul>
+    <li>部材の寸法・ラインナップは<strong>メーカー・商品・年式によって異なります</strong>。
+      アプリの既定値は代表的な系列であり、すべての現場の保有資材と一致するとは限りません。
+      ご利用前に自社部材の寸法表と照合してください。</li>
+    <li>ジャッキベースの調整範囲は、製品全長 600mm 級・使用範囲高さ 50cm 以下・支柱の差込み 10cm 以上
+      という施工資料にもとづく保守的な値を既定にしています。実機の調整代は製品により異なります。</li>
+    <li>資材の概算拾いには<strong>公的な単一の標準がありません</strong>。本アプリの数量は、技術基準が定める
+      設置ルールから導いた近似式によるもので、工法（先行手すり工法など）・現場条件・会社ごとの
+      数え方によって変わります。アプリ内では各項目に計算式を表示していますので、必ず内容をご確認のうえ、
+      発注は現場条件を踏まえて判断してください。</li>
+    <li>アプリが表示する基準値は参考情報です。法令・技術基準の改正への即時対応は保証しません。
+      最新の条文は e-Gov 法令検索等でご確認ください。</li>
+  </ul>
+
+  <h2>4. 誤りの報告のお願い</h2>
+  <p>実務と異なる点、収録している規格の誤りにお気づきの場合は、アプリ内の「計算の誤りを報告」または
+  下記メールでお知らせください。いただいた指摘は次の更新に反映します。<br>
+  <a href="mailto:asonedaywillberefreshing@gmail.com">asonedaywillberefreshing@gmail.com</a></p>
+
+  <h2>5. 免責事項</h2>
+  <p>本アプリの利用により生じたいかなる損害についても、開発者は責任を負いません。
+  計算結果の妥当性、入力値の正確性、施工計画への採否は、利用者（事業者・足場の組立て等作業主任者等）の
+  責任において確認するものとします。</p>
+</body>
+</html>
