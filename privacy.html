@@ -25,16 +25,18 @@
   最終更新：2026年8月12日</p>
 
   <h2>開発者による情報収集</h2>
-  <p>本アプリは、ユーザーの個人情報・位置情報・端末識別情報・その他いかなる個人データも開発者側に収集することはありません。入力された寸法や現場名を開発者が受け取ることはありません。</p>
+  <p>本アプリは、ユーザーの個人情報・位置情報・端末識別情報・その他いかなる個人データも開発者側に収集することはありません。入力された寸法や現場名を開発者が自動的に受け取ることはありません。</p>
+  <p>ただし、アプリ内の「計算の誤りを報告」またはお問い合わせからメールを送信された場合に限り、その本文に含まれる情報（規格・施工幅・採用した割付・高さなど、送信前にご確認・編集いただけます）を開発者が受け取ります。送信するかどうかはユーザーの操作で決まります。</p>
 
   <h2>ネットワーク通信</h2>
-  <p>本アプリは、Apple 純正の App 内課金（RevenueCat 経由の購入状態確認）に関する通信を除き、インターネット通信を行いません。広告配信・解析・トラッキング目的の通信は一切ありません。計算そのものは通信なしで動作します。</p>
+  <p>本アプリは、Apple 純正の App 内課金（RevenueCat 経由の購入状態確認）に関する通信を除き、インターネット通信を行いません。計算そのものは通信なしで動作します。</p>
+  <p>広告配信SDK、および利用者の行動を記録する解析SDK（画面遷移・操作ログ等）は一切組み込んでいません。ただし、上記の課金処理に伴い、RevenueCat 側では購入情報が売上の集計・分析にも利用されます。この用途は App Store Connect の App プライバシーで「分析（Analytics）」として申告しています（個人には紐付けず、トラッキングにも使用しません）。</p>
 
   <h2>端末内に保存されるデータ</h2>
   <p>現場名・面の名前・施工幅などの入力値、採用した割付、メモ、計算日時は、端末内のファイル（アプリのドキュメント領域）および SharedPreferences にのみ保存されます。外部へ送信されることはありません。アプリを削除すると、これらのデータも削除されます。</p>
 
   <h2>共有機能</h2>
-  <p>計算結果の「共有」を実行した場合に限り、ユーザーが選んだ相手・アプリ（メッセージアプリ、メール等）へ、ユーザー自身の操作でテキストが渡されます。共有先の取り扱いは各アプリ・サービスのポリシーに従います。開発者はこの内容を受け取りません。</p>
+  <p>計算結果の「共有」を実行した場合に限り、ユーザーが選んだ相手・アプリ（メッセージアプリ、メール等）へ、ユーザー自身の操作でテキストが渡されます。共有先の取り扱いは各アプリ・サービスのポリシーに従います。共有先に開発者を選ばない限り、開発者はこの内容を受け取りません。</p>
 
   <h2>App内課金（買切）</h2>
   <p>割付・高さ・墨出しの計算は無料で無制限にご利用いただけます。現場の保存件数と資材の概算拾いの回数に無料の上限があり、上限を超える場合に買切の「Pro」をご案内します。購入処理は Apple ID 経由の Apple 純正 App 内課金で行われ、購入状態（エンタイトルメント）の確認・復元・管理に RevenueCat SDK を利用します。サブスクリプション（月額・年額）はありません。</p>
@@ -42,7 +44,7 @@
   <h2>第三者サービス（RevenueCat）</h2>
   <p>本アプリは広告・アナリティクス・トラッキング目的の SDK を一切組み込んでいません。RevenueCat SDK は App 内課金の購入状態確認・購入の復元・エンタイトルメント管理の目的でのみ利用しています。</p>
   <p>開発者は、ユーザーの氏名・メールアドレス・入力内容などの個人情報を収集しません。一方で、RevenueCat の仕組み上、匿名のアプリ利用者識別子（RevenueCat が自動生成する App User ID）、購入情報、レシート情報等が RevenueCat 側で処理される場合があります。これらは購入の確認・復元・不正防止のためにのみ使用され、広告配信や解析、ユーザー追跡の目的には使用されません。</p>
-  <p>App Store Connect の App プライバシーでは、購入処理に伴う情報（Purchases）を「アプリ機能（Functionality）」目的で申告しています。</p>
+  <p>App Store Connect の App プライバシーでは、購入処理に伴う情報（Purchases）を「アプリ機能（App Functionality）」および「分析（Analytics）」の目的で申告しています（RevenueCat の購入状態管理・売上集計に利用されるため）。いずれもユーザー個人には紐付けず、トラッキングにも使用しません。</p>
 
   <h2>お問い合わせ・誤りの報告</h2>
   <p>計算が実務と異なる点のご指摘、その他のご質問は以下までお願いします。アプリ内の「計算の誤りを報告」からも送信できます：<br>
@@ -52,6 +54,6 @@
   <p>本アプリは、登録された部材ルールにもとづく足場の割付・数量等の計算補助を目的とするものであり、足場の安全性の判定や、労働安全衛生法令への適合性の判定を行うものではありません。計算結果の妥当性、入力値の正確性、施工計画への採否は、利用者（事業者・足場の組立て等作業主任者等）の責任においてご確認ください。部材の寸法・規格はメーカー・商品により異なります。</p>
 
   <h2>Privacy Policy (English)</h2>
-  <p>This app does not collect any personal information, location data, or device identifiers. Dimensions, site names, and calculation history are stored only on the device and are never transmitted. No network connections are made except for Apple's standard In-App Purchase flow (managed via RevenueCat for entitlement tracking only). No third-party advertising or analytics SDKs are used. Data is removed when the app is uninstalled. This app provides calculation assistance only and does not determine structural safety or regulatory compliance.</p>
+  <p>This app does not collect any personal information, location data, or device identifiers. Dimensions, site names, and calculation history are stored only on the device and are never transmitted automatically (they reach the developer only if you choose to send a report or inquiry email from within the app). No network connections are made except for Apple's standard In-App Purchase flow (managed via RevenueCat for entitlement tracking only). No third-party advertising or analytics SDKs are used. Data is removed when the app is uninstalled. This app provides calculation assistance only and does not determine structural safety or regulatory compliance.</p>
 </body>
 </html>
